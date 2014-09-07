@@ -31,9 +31,6 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-    <Import Project="$(VCInstallDir)VCWizards\AppWiz\IDA Pro\MyProperties.props" />
-  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug 32-bit|Win32'">
     <Import Project="$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props')" />
   </ImportGroup>
@@ -172,7 +169,4 @@
     <ClCompile Include="Source\CopyAndPast.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.CPP.targets" />
-  <ImportGroup Label="ExtensionTargets">
-    <Import Project="$(VCInstallDir)VCWizards\AppWiz\IDA Pro\MyProperties.targets" />
-  </ImportGroup>
 </Project>
