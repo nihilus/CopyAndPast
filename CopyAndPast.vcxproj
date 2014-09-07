@@ -47,6 +47,7 @@
     <ExtensionsToDeleteOnClean>$(ExtensionsToDeleteOnClean)%3b*.plw</ExtensionsToDeleteOnClean>
     <LinkIncremental>true</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
+    <LibraryPath>C:\Hex-Rays.IDA.Pro.Advanced.v6.5\idasdk\lib\x86_win_vc_32;$(LibraryPath)$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 32-bit|Win32'">
     <OutDir>$(SolutionDir)Build\$(IdaSdkVersion)\$(Configuration)</OutDir>
@@ -59,7 +60,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug 32-bit|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>Include;$(IdaSdkIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Include;C:\Hex-Rays.IDA.Pro.Advanced.v6.5\idasdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <WarningLevel>Level3</WarningLevel>
       <PrecompiledHeader>
